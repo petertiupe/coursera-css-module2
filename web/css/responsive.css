@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 html {
-    background-color: #016295;
+    background-color: darkcyan;
     margin: 0;
     padding: 0;
 }
@@ -10,19 +15,20 @@ body {
 }
 
 h1 {
-    font-size: 200%;
-    height: 50px;
-    padding: 0;
+    font-size: 1.75em;
+    color: black;
+    height: 55px auto;
+    padding: 10px;
     text-align: center;
 }
 
 h2 {
     font-size: 125%;
-    color: #024669;
+    color: midnightblue;
     float: right;
     position: relative;
     padding: 1% 2% 1% 2%;
-    background-color: #2280BF;
+    background-color: red;
     width: auto;
     margin-top: -3.4%;
     margin-right: -3.4%;
@@ -30,10 +36,10 @@ h2 {
 
 }
 
-p {
-    color: #024669;
+section {
+    color: darkslateblue;
     clear: right;
-    padding: 1% 2% 1% 2%;
+    padding: 2% 3% 2% 3%;
 }
 
 #colum1 {
@@ -49,8 +55,8 @@ p {
 
 }
 
-#hchicken {
-    background-color: #FDB813;
+#header1 {
+    background-color: yellow;
 }
 
 #colum2 {
@@ -65,8 +71,8 @@ p {
     outline: 1px solid black;
 }
 
-#hbeef {
-    background-color: #80C31C;
+#header2 {
+    background-color: yellowgreen;
 }
 
 #colum3 {
@@ -81,29 +87,30 @@ p {
     outline: 1px solid black;
 }
 
-#hlamb {
-    background-color: #5095CE;
+#header3 {
+    background-color: greenyellow;
 }
 
 /* RESPONSIVE MEDIA CODE */
 /*************************/
 /* Screens 991px or less */
-@media screen and (max-width: 991px) {
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     #colum1 {
-        width: 45%;
+        width: 40%;
     }
 
     #colum2 {
-        width: 45%;
+        width: 40%;
     }
 
     #colum3 {
-        width: 94%;
-        height: 150px auto;
+        width: 82%;
+        height: 200px;
     }
 
-    #hchicken, #hbeef {
+    #header1, #header2 {
         font-size: 125%;
         float: right;
         position: relative;
@@ -113,7 +120,7 @@ p {
         margin-right: -2.2%;
     }
 
-    #hlamb {
+    #header3 {
         font-size: 125%;
         float: right;
         position: relative;
@@ -149,7 +156,7 @@ p {
         margin-left: 6%;
     }
 
-    #hlamb, #hchicken, #hbeef {
+    #header1, #header2, #header3 {
         font-size: 125%;
         float: right;
         position: relative;
